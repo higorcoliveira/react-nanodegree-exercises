@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 class Game extends Component {
 
+  	// inicializa o componente do jogo criando uma nova questão
     constructor(props) {
       super(props);
       const valuesArray = this.makeNewQuestion();
@@ -47,6 +48,7 @@ class Game extends Component {
   }
 
 render() {
+    // destructuring para imprimir os valores
     const { value1, value2, value3, proposedAnswer } = this.state;
     return (
       // without this '(', JS will automatically put a ';' after 'return.'
